@@ -16,6 +16,7 @@ import SignupPage from './SignupPage/SignupPage';
 function App() {
   return (
     <Router>
+      
       <Nav/>
       <div>
         <Switch>
