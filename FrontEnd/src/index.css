@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+header {
+  background-color: lightblue;
+  color: black;
+  width: 100%;
+  height:  150px;
+  display: block;
+}
+
+.inside {
+  width: 1500px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+
+
+
+.usernav {
+  float: right;
+  height: 100%;
+}
+
+.usernav li {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+
+.usernav li a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: black;
+  font-family: Futura;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: lightblue;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  overflow: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+
+
+p {
+  font-size: 18px;
+}
+
+.main {
+  color: black;
+  font-family: Futura;
+  width: 700px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+
+#total {
+ color:rgb(65, 238, 181);
+}
+
+.amnt-container {
+  background-color: rgb(255, 160, 158);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content:space-evenly;
+  margin: 20px 0;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: rgb(254, 254, 254);
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.history1 {
+  border-right: 5px solid #c0392b;
+}
+
+.list li.history2 {
+  border-right: 5px solid rgb(65, 238, 181);;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #3f8cb0;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
